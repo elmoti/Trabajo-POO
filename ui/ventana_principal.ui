@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>639</width>
+    <height>491</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SGCH-Sistema de Gestion de Consultas de Hospitales</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>639</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <addaction name="opc_salir"/>
+   </widget>
+   <widget class="QMenu" name="menuCRUD">
+    <property name="title">
+     <string>CRUD</string>
+    </property>
+    <addaction name="actionPaciente"/>
+    <addaction name="actionDoctor"/>
+    <addaction name="actionConsultaLeve"/>
+    <addaction name="actionConsultaUrgencia"/>
+   </widget>
+   <widget class="QMenu" name="menuOperaciones">
+    <property name="title">
+     <string>Operaciones</string>
+    </property>
+    <addaction name="actionCalcular_Tiempo_Promedio"/>
+    <addaction name="actionSignos_Vitales_segun_fecha_Consulta_y_CI_Paciente"/>
+    <addaction name="actionConsultas_Urgencia_con_Pacientes_con_Presion_Alta"/>
+    <addaction name="actionPaciente_de_Mayor_Edad_en_las_Consultas_Leves"/>
+    <addaction name="actionConsulta_Leves_este_mes_segun_diagnostico"/>
+   </widget>
+   <widget class="QMenu" name="menuAyuda">
+    <property name="title">
+     <string>Ayuda</string>
+    </property>
+    <addaction name="opc_acerca"/>
+   </widget>
+   <addaction name="menuArchivo"/>
+   <addaction name="menuCRUD"/>
+   <addaction name="menuOperaciones"/>
+   <addaction name="menuAyuda"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="opc_salir">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+X</string>
+   </property>
+  </action>
+  <action name="opc_acerca">
+   <property name="text">
+    <string>Acerca de</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+A</string>
+   </property>
+  </action>
+  <action name="actionPaciente_Leve">
+   <property name="text">
+    <string>Paciente</string>
+   </property>
+  </action>
+  <action name="actionConsultaUrgencia">
+   <property name="text">
+    <string>Consulta Urgencia</string>
+   </property>
+  </action>
+  <action name="actionDoctor">
+   <property name="text">
+    <string>Doctor</string>
+   </property>
+  </action>
+  <action name="actionConsultaLeve">
+   <property name="text">
+    <string>Consulta Leve</string>
+   </property>
+  </action>
+  <action name="actionPaciente">
+   <property name="text">
+    <string>Paciente</string>
+   </property>
+  </action>
+  <action name="actionCalcular_Tiempo_Promedio">
+   <property name="text">
+    <string>Calcular Tiempo Promedio</string>
+   </property>
+  </action>
+  <action name="actionSignos_Vitales_segun_fecha_Consulta_y_CI_Paciente">
+   <property name="text">
+    <string>Signos Vitales segun fecha Consulta y CI Paciente</string>
+   </property>
+  </action>
+  <action name="actionConsultas_Urgencia_con_Pacientes_con_Presion_Alta">
+   <property name="text">
+    <string>Porciento Consultas Urgencia con Pacientes con Presion Alta</string>
+   </property>
+  </action>
+  <action name="actionPaciente_de_Mayor_Edad_en_las_Consultas_Leves">
+   <property name="text">
+    <string>Paciente de Mayor Edad en las Consultas Leves</string>
+   </property>
+  </action>
+  <action name="actionConsulta_Leves_este_mes_segun_diagnostico">
+   <property name="text">
+    <string>Consulta Leves este mes segun diagnostico</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
